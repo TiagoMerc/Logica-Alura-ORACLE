@@ -12,4 +12,4 @@ Neste programa de 6 meses de duração, vou fazer cursos para desenvolver hard e
 
 #oraclenexteducation
 
-[LinkedIn:](https://www.linkedin.com/in/tiago-merc%C3%AAs-ros%C3%A1rio-b6177b85)
+[LinkedIn](https://www.linkedin.com/in/tiago-merc%C3%AAs-ros%C3%A1rio-b6177b85)
