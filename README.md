@@ -11,3 +11,5 @@ Com o ONE vou me preparar para o emprego do futuro e ter novas oportunidades no 
 Neste programa de 6 meses de duração, vou fazer cursos para desenvolver hard e soft skills, com foco em programação e empreendedorismo.
 
 #oraclenexteducation
+
+[LinkedIn:](https://www.linkedin.com/in/tiago-merc%C3%AAs-ros%C3%A1rio-b6177b85)
