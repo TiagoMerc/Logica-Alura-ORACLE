@@ -1,0 +1,44 @@
+<!--08 O detetive Roy!
+
+O detetive Roy, investigando os arquivos de um hacker, encontrou o seguinte programa:
+
+<meta charset="UTF-8">
+<script>
+    document.write( (12 + 15 + 13) / 3);
+</script>COPIAR CÓDIGO
+Sabemos que o código calcula a média de três números. Mas o que eles significam?
+
+Dias depois, o hacker, que era na verdade um hacker do bem, virou amigo de Roy e durante uma conversa o assunto do código veio à tona. Curioso, Roy perguntou ao hacker o que aqueles números significavam e o hacker disse: ah, o programa calcula a média das idades das minhas filhas. Linda tem 12 anos, Guaraciara tem 15 e Pérola tem 13! Roy ficou decepcionado com a resposta, pois achou que era algo mais complicado.
+
+Se você pudesse voltar no tempo e reescrever o programa para que o próprio detetive Roy conseguisse entender o programa, como você o escreveria? (DICA: faça uso de variáveis para deixar seu código mais claro).
+-->
+
+<meta charset="UTF-8">
+<script>
+  var idadeLinda = 12, idadeGuaraciara = 15, idadePerola =13;
+  /* OU
+    var idadeLinda = 12;
+    var idadeGuaraciara = 15;
+    var idadePerola =13;
+  */
+  document.write(Math.round((idadeLinda + idadeGuaraciara + idadePerola) /3));
+</script>
+
+<!--09
+
+Ele viu que poderia evitar o uso dos parênteses na instrução que imprime a média das idades se guardasse antes, em uma variável, a soma das idades.
+
+Altere o programa e aplique a ideia de Roy! Para isso, use a variável totalIdades.-->
+
+<script>
+  var idadeLinda = 12, idadeGuaraciara = 15, idadePerola =13;
+  var totalIdades = (idadeLinda + idadeGuaraciara + idadePerola);
+
+  /* OU
+    var idadeLinda = 12;
+    var idadeGuaraciara = 15;
+    var idadePerola =13;
+  */
+  document.write("<br>" + "Outro formato" + "<br>");
+  document.write(Math.round(totalIdades/3));
+</script>

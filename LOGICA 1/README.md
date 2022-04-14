@@ -14,3 +14,7 @@
 - Repita tarefas com laços, loops, fors e whiles
 
 - Mostre seus programas para seus colegas
+
+## Tarefas:
+
+- Calcular o consumo de combustível por quilômetro rodado "Álcool ou Gasolina?"
