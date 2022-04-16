@@ -18,3 +18,7 @@
 ## Tarefas:
 
 - Calcular o consumo de combustível por quilômetro rodado "Álcool ou Gasolina?"
+
+- Diferença de idades entre dois irmãos 
+
+- Problema das gerações
