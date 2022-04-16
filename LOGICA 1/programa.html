@@ -14,30 +14,23 @@
   function pulaLinha() {
     document.write('<br>')
     document.write('<br>')
-    document.write('<br>')
-    document.write('<br>')
-    document.write('<br>')
-    document.write('<br>')
-    document.write('rdfdsfsdf')
-    document.write('<hr>')
   }
+
+  //Função com parâmetro
+  function mostra(frase) {
+    document.write(frase)
+    pulaLinha()
+  }
+
   var ano = 2016
 
   document.write('Variável ano recebendo 2016')
 
-  pulaLinha()
+  mostra('Flávio nasceu em ' + (ano - 1977) + ' anos')
 
-  document.write('Flávio nasceu em ' + (ano - 1977) + ' anos')
+  mostra('Joaquim nasceu em ' + (ano - 1996) + ' anos')
 
-  pulaLinha()
-
-  document.write('Joaquim nasceu em ' + (ano - 1996) + ' anos')
-
-  pulaLinha()
-
-  document.write('Barney nasceu em ' + (ano - 1976) + ' anos')
-
-  pulaLinha()
+  mostra('Barney nasceu em ' + (ano - 1976) + ' anos')
 
   ano = 2017
 
