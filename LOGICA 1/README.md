@@ -24,3 +24,5 @@
 - Problema das gerações
 
 - Calculo do IMC (return e interação com o usuário)
+
+- "futebol" usando o ParseInt
