@@ -1,0 +1,386 @@
+<!-- <meta charset="UTF_8">
+<script>
+
+  function pulaLinha(){
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  function mostra(frase) {
+    
+    document.write(frase);
+    pulaLinha();
+  }
+
+  function calculaImc(altura, peso) {
+    var imc = peso / (altura * altura);
+    return imc;
+  }
+
+  var imcFlavio = calculaImc(1.71, 73);
+  var imcAmigo = calculaImc(1.72, 68);
+
+  mostra(imcFlavio);
+  mostra(imcAmigo);
+
+</script> -->
+
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+
+        var imc = peso / (altura * altura);
+        return imc;
+    }
+
+    var imcCalculado = calculaImc(1.77, 75);
+    mostra("O meu IMC é : " + imcCalculado);
+</script>
+
+
+<meta charset="UTF_8">
+<script>
+
+  function pulaLinha(){
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  function mostra(frase) {
+    
+    document.write(frase);
+    pulaLinha();
+  }
+
+  function calculaImc(altura, peso) {
+    return peso / (altura * altura);
+  }
+
+  var imcFlavio = calculaImc(1.71, 73);
+  var imcAmigo = calculaImc(1.72, 68);
+  var totalImc = imcFlavio + imcAmigo;
+
+  document.write("A soma dos imc's é " + totalImc);
+  
+</script> 
+
+<!--
+
+  09 Entendendo a fundo retorno de funções
+
+Transcrição
+Nesta aula aprenderemos outra forma de calcularmos mais de um IMC por vez. Ao chamarmos a função calculaImc() com a altura e peso de Flávio, 1.71 e 73, foi calculado o IMC e retornada a variável imc. Para simplificar, podemos simplesmente indicar que o return será o cálculo em si:
+
+function calculaImc(altura, peso) {
+
+    return peso / (altura * altura);
+}
+
+var imcFlavio = calculaImc(1.71, 73);
+var imcAmigo = calculaImc(1.72, 68);
+
+mostra(imcFlavio);
+mostra(imcAmigo);COPIAR CÓDIGO
+Salvaremos e recarregaremos a página, e teremos o mesmo resultado:
+
+24.96494647925858
+
+22.985397512168742COPIAR CÓDIGO
+Isso porque quando chamamos o calculaImc(), a única instrução que temos dentro dele é o return. Quando este for devolver o resultado da função, avaliará a expressão peso / (altura * altura), e imprimirá o que dela resultar.
+
+Entendemos o calculaImc() como um moedor de carne, em que entram as informações de peso e altura, e sai o resultado da função. Entram dois parâmetros, mas é emitido apenas um resultado.
+
+Como o JavaScript processa isso?
+
+Ao receber a seguinte linha:
+
+var imcFlavio = calculaImc(1.71, 73);COPIAR CÓDIGO
+Ele entenderá que a variável imcFlavio recebe calculaImc(1.71, 73), e aguardará isso ser processado, retornando o resultado do cálculo. Poderemos escolher a mensagem que queremos exibir para o IMC:
+
+function calculaImc(altura, peso) {
+
+    return peso / (altura * altura);
+}
+
+var imcFlavio = calculaImc(1.71, 73);
+var imcAmigo = calculaImc(1.72, 68);
+var totalImc = imcFlavio + imcAmigo;
+
+document.write("A soma dos imc's é " + totalImc);COPIAR CÓDIGO
+Salvaremos, e recarregaremos a página no navegador, o que resultará em:
+
+A soma dos imc's é 47.95034399142732COPIAR CÓDIGO
+Quem for utilizar a função escolherá se prefere exibi-lo na tela, receber via e-mail, ou gravar em um banco de dados. O que não podemos fazer é fixá-lo na função calculaImc(), a saída.
+
+E se colocarmos um mostra() dentro do calculaImc(), e quisermos enviar um SMS ou um e-mail? Sua exibição na tela será sempre fixa. Quem chama a função, e pega seu valor, decidirá sobre como deseja dispor destes dados. Podemos também obter o mesmo resultado da seguinte forma:
+
+var totalImc = calculaImc(1.71, 73) + calculaImc(1.72, 68);COPIAR CÓDIGO
+Assim, estamos declarando que o valor total do IMC recebe o retorno de calculaImc(1.71, 73), somado ao retorno de calculaImc(1.72, 68). Ao se deparar com essa operação, o JavaScript tomará o resultado de cada operação separadamente, primeiro um IMC e depois o outro, para então somá-los.
+
+Utilizar um método ou outro é uma escolha do programador. Com isso, temos um programa que abre possibilidades para criarmos outros ainda mais sofisticados.
+-->
+
+
+<script>
+
+  function pulaLinha(){
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  function mostra(frase) {
+    
+    document.write(frase);
+    pulaLinha();
+  }
+
+  function calculaImc(altura, peso) {
+    return peso / (altura * altura);
+  }
+
+  var nome = prompt("Informe o seu nome");
+  var alturaInformada = prompt(nome + ", informe sua altura");
+  var pesoInformado = prompt(nome + ", informe seu peso");
+
+  var imc = calculaImc(alturaInformada, pesoInformado);
+  
+  document.write("<hr>" + "11 - Interagindo com usuário");
+  document.write("<br>" + nome + ", o seu IMC calculado é " + imc);
+  
+</script> 
+
+<!--
+
+11 - Interagindo com usuário
+
+Transcrição
+Nesta aula aprenderemos a interagir com usuários. Temos nosso programa do IMC:
+
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+    function calculaImc(altura, peso) {
+
+        return peso / (altura * altura);
+}
+
+</script>COPIAR CÓDIGO
+Temos as funções pulaLinha(), mostra() e calculaImc(), e criaremos em seguida duas variáveis, alturaInformada e pesoInformado:
+
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+    function calculaImc(altura, peso) {
+
+        return peso / (altura * altura);
+}
+
+var alturaInformada = 1.71;
+var pesoInformado = 73;
+
+</script>COPIAR CÓDIGO
+Para calcular o IMC, abaixo das variáveis que acabamos de criar, teremos a var imc, que receberá o calculaImc() com os parâmetros alturaInformada e pesoInformado:
+
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+    function calculaImc(altura, peso) {
+
+        return peso / (altura * altura);
+}
+
+var alturaInformada = 1.71;
+var pesoInformado = 73;
+
+var imc = calculaImc(alturaInformada, pesoInformado)
+
+</script>COPIAR CÓDIGO
+E, para exibir, incluiremos uma instrução document.write() abaixo da variável imc:
+
+var alturaInformada = 1.71;
+var pesoInformado = 73;
+
+var imc = calculaImc(alturaInformada, pesoInformado)
+
+document.write("O IMC calculado é " + imc);
+
+</script>COPIAR CÓDIGO
+Salvaremos o programa, retornaremos ao navegador e recarregaremos a página. Obteremos o resultado desejado:
+
+O IMC calculado é 24.96494647925858COPIAR CÓDIGO
+Até então não foi apresentado nenhum conceito novo.
+
+Veremos agora como podemos calcular o IMC de um novo indivíduo, como uma visita, por exemplo. Para isso, esta pessoa teria de inserir suas informações diretamente no programa. Quanto mais pessoas quiserem saber seu IMC, maior o número de alterações pelas quais o programa terá de passar.
+
+Faremos com que o programa seja genérico, ou seja, quando o usuário recarregar a página, será solicitado que informe sua altura e peso. Determinamos que as variáveis alturaInformada e pesoInformado receberão as informações do usuário, mas ainda não definimos como isso será perguntado.
+
+Abriremos o console do Google Chrome e selecionaremos na barra de menu superior as opções "Visualizar > Desenvolvedor > Console JavaScript". Nele, digitaremos:
+
+prompt()COPIAR CÓDIGO
+Trata-se de uma função do JavaScript, que receberá como parâmetro a pergunta que desejamos fazer ao usuário, no caso, "Informe sua altura":
+
+prompt("Informe sua altura");COPIAR CÓDIGO
+Pressionaremos a tecla "Enter", e surgirá um pop up com a frase "Informe sua altura" e um espaço em branco abaixo para que o usuário possa incluir suas informações. Digitaremos "1.71" e pressionaremos "Ok".
+
+Veremos que foi impresso no console a informação que acabamos de inserir:
+
+prompt("Informe sua altura");
+"1.71"COPIAR CÓDIGO
+Isso porque o prompt() é uma função que retorna um valor. Portanto, a variável altura receberá o retorno do prompt():
+
+prompt("Informe sua altura");
+"1.71"
+var altura = prompt("Informe sua altura");COPIAR CÓDIGO
+Para confirmar, basta digitarmos altura e pressionarmos "Enter". Como foi impresso o número 1.71, sabemos que deu certo:
+
+prompt("Informe sua altura");
+"1.71"
+var altura = prompt("Informe sua altura)";
+altura
+"1.71"COPIAR CÓDIGO
+Do mesmo modo, se digitarmos alert(altura) e pressionarmos "Enter", surgirá um pop up com o número 1.71. Fecharemos o console e retornaremos ao editor de texto. No local em que há o número 1.71, colocaremos a função prompt():
+
+var alturaInformada = prompt("Informe sua altura");COPIAR CÓDIGO
+Para o peso, inseriremos prompt("Informe seu peso"):
+
+var alturaInformada = prompt("Informe sua altura");
+var pesoInformado = prompt("Informe seu peso");COPIAR CÓDIGO
+A informação só será considerada quando o usuário pressionar a tecla "Ok". Salvaremos o programa, retornaremos ao navegador e recarregaremos a página. Se simplesmente pressionarmos "Ok" sem inserir nenhum dado, teremos como resultado "O IMC calculado é NaN".
+
+Recarregaremos a página. Informaremos a altura, 1.71, e o peso, 73. Assim, o resultado exibido na tela é:
+
+O IMC calculado é 24.96494647925858COPIAR CÓDIGO
+Para que as informações de um novo usuário sejam inseridas, basta recarregarmos a página. Como o programa será executado novamente, todas as instruções serão processadas. Inseriremos novos dados, 1.62 de altura, e 55 de peso. Isto resultará em:
+
+O IMC calculado é 20.957171162932475COPIAR CÓDIGO
+Nosso programa é mais útil, porque consegue interagir com o usuário. É interessante personalizarmos ele ainda mais, criando a variável nome:
+
+var nome = prompt("Informe o seu nome");
+var alturaInformada = prompt("Informe sua altura");
+var pesoInformado = prompt("Informe seu peso");COPIAR CÓDIGO
+A variável nome guardará o nome que foi digitado no prompt(). Ele será concatenado nas próximas mensagens, para que fiquem mais pessoais:
+
+var nome = prompt("Informe o seu nome");
+var alturaInformada = prompt(nome + ", informe sua altura");
+var pesoInformado = prompt(nome + ", informe seu peso");
+
+var imc = calculaImc(alturaInformada, pesoInformado);
+
+document.write(nome + ", o seu IMC calculado é " + imc);COPIAR CÓDIGO
+Lemos em uma variável o nome de quem está utilizando o programa e, ao fazermos a próxima pergunta, concatenamos seu nome com a pergunta. Salvaremos e recarregaremos a página, e isto fará com que o primeiro pop up apareça, solicitando o nome do usuário. Digitaremos "Flávio" e pressionaremos "Enter".
+
+Em seguida surge um novo pop up, com a mensagem:
+
+Flávio, informe sua altura
+
+Digitaremos 1.71 e pressionaremos "Ok". Surgirá então um novo pop up:
+
+Flávio, informe seu peso
+
+Digitaremos 73 e pressionaremos "Ok". Como resultado final, teremos:
+
+Flávio, o seu IMC calculado é 24.96494647925858COPIAR CÓDIGO
+Alteraremos a mensagem para que diga apenas "O seu IMC é":
+
+var nome = prompt("Informe o seu nome");
+var alturaInformada = prompt(nome + ", informe sua altura");
+var pesoInformado = prompt(nome + ", informe seu peso");
+
+var imc = calculaImc(alturaInformada, pesoInformado);
+
+document.write(nome + ", o seu IMC é " + imc);COPIAR CÓDIGO
+Salvaremos e recarregaremos a página. Inseriremos novas informações, como o nome "Calopsita", altura "1,79" e peso "90", e teremos o seguinte resultado:
+
+Calopsita, o seu IMC é 28.089010954714272COPIAR CÓDIGO
+Temos um programa genérico que cada pessoa que o utilizar pode recarregar para informar seus dados pessoais!
+
+
+-->
+
+<script>
+  function pulaLinha() {
+
+      document.write("<br>");
+  }
+
+  function mostra(frase) {
+      document.write(frase);
+      pulaLinha();
+  }
+
+  function a(texto) {
+
+      return "(" + texto + ")";
+  }
+
+  function b(texto) {
+
+      return "@" + texto + "@";
+  }
+
+  function c(nome, sobrenome) {
+
+      return b(nome + " " + a(sobrenome));
+
+  }
+
+  var resultado = c("Flávio", "Almeida");
+
+  mostra(resultado);
+
+</script>
+<!--@Flávio (Almeida)@
+
+
+A função b esta recebendo a concatenação do nome com o sobrenome, mas veja que o sobrenome é o retorno da função a. A função a devolverá o sobrenome entre parênteses, daí, esse valor será concatenado com o nome e o resultado finalmente será passado para a função B.
+
+Alternativa correta
+-->
