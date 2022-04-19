@@ -26,3 +26,7 @@
 - Calculo do IMC (return e interação com o usuário)
 
 - "futebol" usando o ParseInt
+
+- Condições 
+
+- Jogo adivinha 2 (19/04/2022)
