@@ -1,0 +1,32 @@
+<!--
+No mundo JavaScript, conseguimos capturar os elementos do mundo HTML, verificar o valor destes elementos, e associar a execução de uma função a um clique de botão. Vimos que, ao abrirmos o console do navegador e fazermos o verifica(), estamos executando a função de forma manual. No entanto, se digitarmos verifica e pressionarmos "Enter", é impresso o código da função.
+
+Como nosso objetivo é executar a função ao clique do botão, removemos os parênteses no código, fazendo com que ela fique inserida no onclick e, quando clicamos no botão do navegador, é ele quem insere os parênteses para chamar a função. Esta estratégia é mais interessante para o usuário.
+
+-->
+<!--Mundo HTML-->
+<input>
+<button>Compare com o meu segredo</button>
+
+<script>
+  var segredo = Math.round(Math.random() * 10);
+
+  var input = document.querySelector("input");
+  input.focus();
+
+  function verifica() {
+
+    if(input.value == segredo) {
+
+      alert("Você ACERTOU!");
+    } else {
+      alert("Você ERROU!!!!!!!");
+    }
+ 
+    input.value = "";
+    input.focus();
+  }
+  var button = document.querySelector("button");
+
+  button.onclick = verifica;
+</script>

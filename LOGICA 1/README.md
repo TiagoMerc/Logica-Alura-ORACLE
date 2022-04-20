@@ -44,3 +44,9 @@
 - Média das idade (20/04/2022 - foi adaptada para mostrar alguns detalhes a mais)
 
 - Média dos eventos (20/04/2022)
+
+   **08 -  Interaja de maneira diferente com o usuário**
+
+- 01 Campo de texto e botão   
+
+- Adivinha mais
