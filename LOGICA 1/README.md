@@ -38,3 +38,9 @@
 - Tela de Lgin  (19/04/2022)
 
 - Tabuada  (19/04/2022)
+
+- Do For ao While (20/04/2022)
+
+- Média das idade (20/04/2022 - foi adaptada para mostrar alguns detalhes a mais)
+
+- Média dos eventos (20/04/2022)
