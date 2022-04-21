@@ -50,3 +50,11 @@
 - 01 Campo de texto e botão   
 
 - Adivinha mais
+
+**09  - Trabalhe com muitos dados**
+
+- Armazenando mais dados 
+
+- Manipulando Array
+
+**Conclusão do curso: 21/04/2022**
