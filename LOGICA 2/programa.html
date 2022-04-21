@@ -1,0 +1,62 @@
+<meta charset="UTF-8">
+
+<canvas width="600" height="400"></canvas> 
+
+<script> 
+
+  var tela = document.querySelector('canvas');
+  var pincel = tela.getContext('2d');
+
+  pincel.fillStyle = 'lightgrey'; // Nossa primeira operação será desenhar um retângulo de dimensões 600x400, para preencher todo o <canvas>. Para fazer isso, chamaremos o "pincel", e pediremos para ele, com o operador " . ", preencher o retângulo.
+
+    //Diferentemente de fillRect(), de getContext(), ou de querySelector(), o fillStyle não é uma função, e sim o que chamamos de propriedade. É equivalente a uma variável, por receber um valor, que é a cor. No caso, utilizaremos o 'lightgrey':
+
+  pincel.fillRect(0, 0, 600, 400); // Preencher o retângulo. Preencher em Inglês é "fill", enquanto "rect" é a abreviação de retângulo:   Como sabemos, na matemática trabalhamos com a ideia de planos cartesianos, onde temos um eixo x, na horizontal, e um eixo y, na vertical.
+
+// De acordo com as dimensões que especificamos, começaremos nosso preenchimento no canto superior esquerdo, isso significa que iniciaremos no ponto 0 tanto no eixo x quanto y.
+
+// Dessa coordenada, queremos criar uma forma que tenha 600 de largura, e 400 de altura, portanto, inseriremos isto em nosso código:
+    pincel.fillStyle = 'green';
+    pincel.fillRect(0, 0, 200, 400);
+
+    pincel.fillStyle = 'red';
+    pincel.fillRect(400, 0, 200, 400);
+
+// Criar triângulo
+
+    pincel.fillStyle = 'yellow';
+    pincel.beginPath(); //Indicaremos que nosso pincel iniciará seu caminho 
+    pincel.moveTo(300, 200); //Pensando em nossas coordenadas, temos que posicionar nosso pincel exatamente no ponto 300, da coordenada X (que mede 600), e 200 na Y (que mede 400):
+    pincel.lineTo(200, 400); //Esta posição será o ponto de encontro entre o verde e o cinza, e a linha inferior de nosso <canvas>, portanto, 200 no eixo X, e 400 no eixo Y:
+    pincel.lineTo(400, 400); //O próximo movimento criará uma linha horizontal, do ponto que acabamos de criar até o ponto em que o cinza encontra o vermelho, de coordenadas 400 (X), e 400 (Y):
+    pincel.fill(); //basta inserirmos um comando para que o programa preencha esta forma
+
+// Criar círculo
+
+    pincel.fillStyle = 'blue';
+    pincel.beginPath();
+    pincel.arc(300, 200, 50, 0, 2 * 3.14);
+    //Posicionamento da esfera, que definiremos como 300 (X) e 200 (Y);
+    //Tamanho, ou seja, o raio - que definiremos como 50;
+    //O ângulo inicial, e o ângulo final, em radianos (multiplicado por PI - 3,14);
+    pincel.fill();  //chamaremos a função fill para que a esfera seja preenchida:
+
+</script>
+
+<!-- O fillRect() precisa de algumas informações para conseguir desenhar o retângulo, que estarão na ordem: posição inicial X do “pincel”, posição inicial Y do “pincel”, posição final X do “pincel”, posição final Y do “pincel”.
+
+
+Isso aí! Lembrando que as informações sempre têm que aparecer na ordem correta para que o JavaScript interprete corretamente onde o desenho começa e onde termina.
+
+
+OBSERVAÇÃO: Para que pudéssemos construir esta imagem, precisamos conhecer a função getContext(), fillRect(), lineTo(), beginPath(), a propriedade fillStyle, a esse conjunto de propriedades damos o nome de APIs, ou bibliotecas. Aqui, estamos manipulando a API específica para a criação de gráficos.
+
+Para descobrirmos estas bibliotecas, temos que pesquisar pela documentação da linguagem na internet, utilizando os termos "canvas 2d api".
+
+O resultado escolhido está disponível. https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D
+
+Clicamos no link das Web APIs, há materiais disponíveis sobre fillRect, fillStyle, entre outros. O que faremos é melhorar certos aspectos do nosso programa nas próximas aulas e organizar nosso código da melhor forma pois, se alguém que está iniciando na programação ler ele, não conseguirá identificar com clareza qual a sua função.
+
+Adiante, organizaremos nosso código, para facilitar sua manutenção e legibilidade.
+
+-->
