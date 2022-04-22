@@ -10,3 +10,8 @@ Se você trabalha em outras áreas como marketing digital, experiência do usuá
 
 
 ## Tarefas:
+
+
+## Prints:
+
+![Print do programa sobre API](/LOGICA%202/imgs/print.png)
