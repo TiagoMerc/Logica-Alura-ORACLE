@@ -25,6 +25,9 @@ Retângulo 4: 70, 100 (nariz).
 Retângulos 5 e 6: 40, 110 (parte da boca).
 O seu canvas deve ter o tamanho de 600 x 400 pixels.
 
+#### Esquadro
+
+Repare que isso é nada mais do que dois triângulos, um dentro do outro. Lembrando também que desenhar um triângulo é diferente de um retângulo, pois é preciso desenhar linha por linha. Em outras palavras, a API é diferente!
 
 ## Prints:
 
