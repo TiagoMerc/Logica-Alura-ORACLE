@@ -11,7 +11,23 @@ Se você trabalha em outras áreas como marketing digital, experiência do usuá
 
 ## Tarefas:
 
+#### A cara do Creeper
+
+O Johann é um menino de 11 anos e adora jogar Minecraft. Minecraft é aquele jogo onde você constrói um mundo com blocos, como se fosse um Lego virtual. Ele gosta tanto que pediu um pôster de uma das personagens principais do jogo: o Creeper.
+
+O Creeper na verdade é um monstro (que explode ao se aproximar de um jogador).
+
+Segue o tamanho (largura, altura) em pixels de cada retângulo:
+
+Retângulo 1: 350, 300 (cabeça).
+Retângulos 2 e 3: 90, 90 (olhos).
+Retângulo 4: 70, 100 (nariz).
+Retângulos 5 e 6: 40, 110 (parte da boca).
+O seu canvas deve ter o tamanho de 600 x 400 pixels.
+
 
 ## Prints:
 
 ![Print do programa sobre API](/LOGICA%202/imgs/print.png)
+
+![Print do Creeper](/LOGICA%202/imgs/print1.png)
