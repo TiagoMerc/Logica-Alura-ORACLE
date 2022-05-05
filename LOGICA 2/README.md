@@ -40,6 +40,14 @@ Repare que isso é nada mais do que dois triângulos, um dentro do outro. Lembra
 <p>Canto inferior esquerda: 100,350</p>
 <p>Canto inferior direito: 275,350</p>
 
+#### Ordem e Progresso
+
+Que tal desenhar a nossa bandeira? Tirando as estrelas e o dizer "Ordem e Progresso", sabemos tudo para desenhar a bandeira do Brasil: Talvez você esteja pensando que não aprendemos a criar um losango, mas repare que o losango amarelo pode ser representado através de dois triângulos:
+
+Ou seja, temos um retângulo verde (green), dois triângulos amarelos (yellow) e um circulo azul escuro (darkblue).
+
+Nos exercícios anteriores já praticamos como desenhar retângulos e triângulos.
+
 ## Prints:
 
 ![Print do programa sobre API](/LOGICA%202/imgs/print.png)
@@ -48,4 +56,7 @@ Repare que isso é nada mais do que dois triângulos, um dentro do outro. Lembra
 ![Print do Creeper](/LOGICA%202/imgs/print1.png)
 
 ##### Esquadro
-![Print do Creeper](/LOGICA%202/imgs/print2.png)
+![Print Esquadro](/LOGICA%202/imgs/print2.png)
+
+##### Ordem e progresso
+![Print Ordem e progresso](/LOGICA%202/imgs/print3.png)
