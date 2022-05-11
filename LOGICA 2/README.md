@@ -48,6 +48,26 @@ Ou seja, temos um retângulo verde (green), dois triângulos amarelos (yellow) e
 
 Nos exercícios anteriores já praticamos como desenhar retângulos e triângulos.
 
+#### Programa 2
+
+Desenhando quadrados
+
+#### Desenhando círculo
+
+Desenhando um flor
+
+#### Desenhando fração
+
+Desenhando fração com os quadrados 
+
+#### Gráfico de barras
+
+Através de gráficos podemos expressar visualmente dados ou valores numéricos, e assim facilitar a nossa compreensão. Gráficos ajudam a entender o relacionamento entre valores e facilitam tirar conclusões.
+
+#### Esquadro 2
+
+Criando um esquadro ao desenhar dois triângulo um dentro do outro.
+
 ## Prints:
 
 ![Print do programa sobre API](/LOGICA%202/imgs/print.png)
@@ -60,3 +80,20 @@ Nos exercícios anteriores já praticamos como desenhar retângulos e triângulo
 
 ##### Ordem e progresso
 ![Print Ordem e progresso](/LOGICA%202/imgs/print3.png)
+
+##### Programa 2
+![Programa 2](/LOGICA%202/imgs/programa2.png)
+
+##### Desenhando círculo
+![Desenhando círculo](/LOGICA%202/imgs/desenhandoCirculo.png)
+
+##### Desenhando fração
+![Desenhando fração](/LOGICA%202/imgs/DesenhandoFracao.png)
+
+##### Desenhando gráfico de barras
+![Desenhando gráfico de barras](/LOGICA%202/imgs/graficodebarras.png)
+
+##### Desenhando esquadro 2
+![Desenhando esquadro 2](/LOGICA%202/imgs/esquadro2.png)
+
+
