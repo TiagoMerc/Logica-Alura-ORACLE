@@ -68,6 +68,14 @@ Através de gráficos podemos expressar visualmente dados ou valores numéricos,
 
 Criando um esquadro ao desenhar dois triângulo um dentro do outro.
 
+#### Programa 3
+
+Aprendemos a interagir com o usuário, por exemplo, desenhando uma bolinha azul toda vez que ele clicar no canvas, nossa tela!
+
+#### Trocando de cor
+
+Permitir que o usuário altere a cor da bolinha que é desenhada na tela. As cores serão obrigatoriamente blue, red e green.
+
 ## Prints:
 
 ![Print do programa sobre API](/LOGICA%202/imgs/print.png)
@@ -96,4 +104,8 @@ Criando um esquadro ao desenhar dois triângulo um dentro do outro.
 ##### Desenhando esquadro 2
 ![Desenhando esquadro 2](/LOGICA%202/imgs/esquadro2.png)
 
+##### Programa 3 
+![Programa 3](/LOGICA%202/imgs/print4.png)
 
+##### Trocando de cor 
+![Trocando cor](/LOGICA%202/imgs/print5.png)
