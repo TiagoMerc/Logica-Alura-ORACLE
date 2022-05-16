@@ -76,6 +76,31 @@ Aprendemos a interagir com o usuário, por exemplo, desenhando uma bolinha azul 
 
 Permitir que o usuário altere a cor da bolinha que é desenhada na tela. As cores serão obrigatoriamente blue, red e green.
 
+#### Era uma vez uma bolinha que virou um bolão
+
+Quando clicarmos na tela pressionando a tecla SHIFT, vamos desenhar uma bolinha acrescida de 20 ao seu raio. Se soltarmos a tecla e clicarmos, ela voltará com seu raio que hoje é 10.
+
+#### Era uma vez um bolão que quase explodiu!
+
+Nesse código que é a seguinte: toda vez que o usuário clicar na tela com o SHIFT pressionado, vamos somar 10 ao valor do raio atual. Sendo assim, mesmo soltando o SHIFT as próximas bolinhas utilizarão o mesmo valor de raio. Se clicarmos diversas vezes segurando SHIFT teremos uma bola cada vez maior.
+
+#### O bolão que deseja emagrecer!
+
+Você deve ter ficado tão incomodado quanto eu, porque a bolinha só cresce até tomar conta da tela inteira. Uma das coisas que podemos melhorar é limitar o tamanho de crescimento das bolinhas, ou seja, quero combinar com você que o raio não pode ultrapassar 40. Além disso, se o usuário clicar na tela com a tecla ALT pressionada, o raio deve diminuir 5. Para saber se a tecla ALT está pressionada, fazemos evento.altKey. ATENÇÃO: o decremento do raio deverá ser de 5 em 5 e o tamanho mínimo da bolinha deve ser de 10 que é o tamanho original.
+IMPORTANTE: SE VOCÊ USA LINUX, USE evento.ctrlKey no lugar de evento.altKey. Isso porque o ALT no linux ativa o menu.
+
+#### Desenhando com o mouse
+
+O desafio agora é o seguinte. Se andarmos com o ponteiro do mouse sobre a tela enquanto o botão esquerdo é pressionado, vamos desenhar um círculo. Isso significa que enquanto não soltarmos o botão esquerdo, desenharemos um círculo ao lado do outro, que na verdade dará um efeito que estamos passando um pincel na tela. Se soltarmos o botão esquerdo, o ato de mover o mouse sob a tela não deverá desenhar nada. No final, queremos um efeito parecido com ferramentas como Paint Brush ou Photoshop, que permite o usuário desenhar na tela.
+
+#### Desenhando com o mouse com infinitas cores
+
+Agora, vamos adicionar um input em nossa página logo após o canvas. No mundo HTML, existe o input do tipo color, que ao ser clicado exibe uma paleta de cores para podermos selecionar;
+
+#### Acertando o alvo
+
+O alvo é feito a partir de três círculos, todos com as mesmas coordenadas x e y, mas que possuem raios diferentes. Começamos desenhando primeiro do maior para o menor, se tivéssemos feito ao contrário o círculo maior vermelho seria desenhado em cima dos demais.
+
 ## Prints:
 
 ![Print do programa sobre API](/LOGICA%202/imgs/print.png)
@@ -109,3 +134,21 @@ Permitir que o usuário altere a cor da bolinha que é desenhada na tela. As cor
 
 ##### Trocando de cor 
 ![Trocando cor](/LOGICA%202/imgs/print5.png)
+
+##### Era uma vez uma bolinha que virou um bolão 
+![Era uma vez uma bolinha que virou um bolão](/LOGICA%202/imgs/print6.png)
+
+##### Era uma vez um bolão que quase explodiu
+![Era uma vez uma bolinha que virou um bolão](/LOGICA%202/imgs/print7.png)
+
+##### O bolão que deseja emagrecer!
+![O bolão que deseja emagrecer](/LOGICA%202/imgs/print8.png)
+
+##### Desenhando com o mouse
+![Desenhando com o mouse](/LOGICA%202/imgs/print9.png)
+
+##### Desenhando com o mouse com infinitas cores
+![Desenhando com o mouse com infinitas cores](/LOGICA%202/imgs/print10.png)
+
+##### Acertando o alvo
+![Acertando o alvo](/LOGICA%202/imgs/print11.png)
