@@ -101,6 +101,24 @@ Agora, vamos adicionar um input em nossa página logo após o canvas. No mundo H
 
 O alvo é feito a partir de três círculos, todos com as mesmas coordenadas x e y, mas que possuem raios diferentes. Começamos desenhando primeiro do maior para o menor, se tivéssemos feito ao contrário o círculo maior vermelho seria desenhado em cima dos demais.
 
+#### Animações simples
+
+Temos uma esfera viajando do canto superior esquerdo da tela, até o canto superior direito. Para que a animação fique mais rápida, basta alterar o segundo parâmetro de setInterval, deixaremos como 10;
+
+#### Tudo que vai volta
+
+Altere o código para que o círculo, assim que chegar no canto direito da tela, volte. No final, o círculo deve ficar indo e voltando eternamente. Existem várias formas de se conseguir esse resultado, assim como tudo no universo da programação. 
+
+#### Pulso
+
+Sua tarefa será fazer uma bolinha pulsar, ou seja, seu raio deve ter tamanho mínimo de 20 e tamanho máximo de 30. Sendo assim, de 20 até 30, o raio deve ser incrementado de um em um e quando o valor do raio ultrapassar o máximo, ele deve sofrer um decremento de um. Contudo, fique alerta, pois se o raio se tornar menor que 20, devemos voltar a incrementá-lo e assim por diante. Para um efeito mais pomposo, use 20 milissegundos na taxa de atualização da tela.
+
+#### Movendo a bolinha pelo teclado
+
+Então, esse exercício tem duas partes. A primeira eu lhe ensinarei como capturar as arrow keys, ou seja, aquelas teclas que são setas, geralmente usadas em joguinhos para andar com algo pela tela. Na segunda parte, vem o desafio de lógica que você deve implementar.
+Identificando qual tecla foi pressionada
+Em JavaScript, existe o evento onkeydown, que permite identificar qual tecla está pressionada. Esse evento é o único capaz de identificar também as setas do teclado. Contudo, até agora todos os eventos que associamos foi com nossa tela, mas dessa vez quem deve responder ao evento é document. E document, nosso oráculo que sabe tudo o que a página possui, é o cara que fica escutando ao teclado. Então, vou alterar o código e criar a função leDoTeclado e associá-la ao document através do evento onkeydown;
+
 ## Prints:
 
 ![Print do programa sobre API](/LOGICA%202/imgs/print.png)
@@ -152,3 +170,15 @@ O alvo é feito a partir de três círculos, todos com as mesmas coordenadas x e
 
 ##### Acertando o alvo
 ![Acertando o alvo](/LOGICA%202/imgs/print11.png)
+
+##### Animações simples
+![Animações simples](/LOGICA%202/imgs/print12.png) 
+
+##### Tudo que vai volta
+![Tudo que vai volta](/LOGICA%202/imgs/print13.png) 
+
+##### Pulso
+![Pulso](/LOGICA%202/imgs/print14.png) 
+
+##### Movendo a bolinha pelo teclado
+![Movendo a bolinha pelo teclado](/LOGICA%202/imgs/print15.png) 
