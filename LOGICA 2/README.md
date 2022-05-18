@@ -119,6 +119,10 @@ Então, esse exercício tem duas partes. A primeira eu lhe ensinarei como captur
 Identificando qual tecla foi pressionada
 Em JavaScript, existe o evento onkeydown, que permite identificar qual tecla está pressionada. Esse evento é o único capaz de identificar também as setas do teclado. Contudo, até agora todos os eventos que associamos foi com nossa tela, mas dessa vez quem deve responder ao evento é document. E document, nosso oráculo que sabe tudo o que a página possui, é o cara que fica escutando ao teclado. Então, vou alterar o código e criar a função leDoTeclado e associá-la ao document através do evento onkeydown;
 
+#### Trocando bandeiras
+
+Vamos usar as bandeiras do Brasil e da Alemanha. A ideia é homenagear a final de futebol masculino das Olimpíadas e claro, aprender e praticar mais lógica de programação.
+
 ## Prints:
 
 ![Print do programa sobre API](/LOGICA%202/imgs/print.png)
@@ -182,3 +186,6 @@ Em JavaScript, existe o evento onkeydown, que permite identificar qual tecla est
 
 ##### Movendo a bolinha pelo teclado
 ![Movendo a bolinha pelo teclado](/LOGICA%202/imgs/print15.png) 
+
+#####  Trocando bandeiras 
+![Trocando bandeiras](/LOGICA%202/imgs/print16.png) 
