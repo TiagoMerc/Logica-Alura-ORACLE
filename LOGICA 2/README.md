@@ -123,6 +123,16 @@ Em JavaScript, existe o evento onkeydown, que permite identificar qual tecla est
 
 Vamos usar as bandeiras do Brasil e da Alemanha. A ideia é homenagear a final de futebol masculino das Olimpíadas e claro, aprender e praticar mais lógica de programação.
 
+#### Meu primeiro jogo
+
+O objetivo do jogo é que o usuário clique no alvo antes que este desapareça. Ao clicar no centro do alvo, surge um pop up com a mensagem "acertou!". Clicando em qualquer outro lugar da tela resulta em erro.
+
+É um jogo simples, no qual utilizaremos o raciocínio lógico e alguns conceitos de elaboração de jogos. Assim, você será capaz de criar suas próprias brincadeiras.
+
+#### Desenhe obras de arte
+
+O desafio desse exercício é trocar a cor utilizada para desenhar o círculo de acordo com o quadrado da cor que clicarmos. Se clicarmos no verde, usaremos a cor verde quando formos desenhar e por aí vai. Outro ponto é que não podemos desenhar em cima da nossa paleta, ou melhor, não podemos desenhar na linha inteira na qual faz parte.
+
 ## Prints:
 
 ![Print do programa sobre API](/LOGICA%202/imgs/print.png)
@@ -189,3 +199,9 @@ Vamos usar as bandeiras do Brasil e da Alemanha. A ideia é homenagear a final d
 
 #####  Trocando bandeiras 
 ![Trocando bandeiras](/LOGICA%202/imgs/print16.png) 
+
+#####  Meu primeiro jogo
+![Meu primeiro jogo](/LOGICA%202/imgs/print17.png) 
+
+#####  Desenhe obras de arte
+![Desenhe obras de arte](/LOGICA%202/imgs/print18.png) 
